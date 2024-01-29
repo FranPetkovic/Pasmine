@@ -6,8 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "next build",
+    "deploy": "gh-pages -d out",
+    "postdeploy": "next export && mv out/* . && rm -rf out"
   },
+  "homepage": "https://github.com/FranPetkovic/Pasmine",
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
@@ -16,6 +20,7 @@
   "devDependencies": {
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^3.3.0",
+    "gh-pages": "^3.2.3"
   }
 }
