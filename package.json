@@ -2,6 +2,7 @@
   "name": "dog-api-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://FranPetkovic.github.io/Pasmine",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,9 +10,8 @@
     "lint": "next lint",
     "predeploy": "next build",
     "deploy": "gh-pages -d out",
-    "postdeploy": "next export && mv out/* . && rm -rf out"
+    "clean": "rm -rf out"
   },
-  "homepage": "https://github.com/FranPetkovic/Pasmine",
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
